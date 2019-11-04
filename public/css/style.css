@@ -1,0 +1,113 @@
+:root{
+
+    --color1: #011132;
+    --color2: #3c537c;
+    --color3: white;
+    --color4: #cccccc;
+    --light-color: #f3f3f3;
+    --light-gray: #f7f7f7;
+    --orange: #f99500;
+    --orange-hover:#ed7b22;
+    --cover: rgba(0,0,0,0.7);
+    --gray: #333333;
+    --speed: 0.7s;
+}
+@font-face {
+    font-family: Gandom;
+    src: url('http://fonts.codearena.ir/rastikerdar/gandom/gandom.eot');
+    src: url('http://fonts.codearena.ir/rastikerdar/gandom/gandom.eot?#iefix') format('embedded-opentype'),
+    url('http://fonts.codearena.ir/rastikerdar/gandom/gandom.woff') format('woff'),
+    url('http://fonts.codearena.ir/rastikerdar/gandom/gandom.ttf') format('truetype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    direction: rtl;
+    background-color: var(--light-color);
+    font: 14px/2.1 Gandom,Tahoma;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+/* utility class starts*/
+.btn{
+    display: block;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 30px auto;
+    border: none;
+    cursor: pointer;
+    direction: rtl;
+    color: var(--color3);
+
+}
+.btn-color1{
+   background-color: var(--orange);
+   transition: all 0.7s;
+}
+.btn-color1:hover{
+    background-color: var(--orange-hover);
+    color: var(--color3);
+}
+label{
+    display: block;
+    font-weight: bold;
+    color: var(--gray);
+    margin: 5px auto;
+}
+.container{
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+}
+.hr{
+    width: 300px;
+    height: 2px;
+    background-color: var(--gray);
+    margin: auto;
+}
+.logo{
+
+    padding: 30px 10px 5px;
+    margin-left: 30px;
+    font-weight: bolder;
+    color: var(--color3);
+    border-radius: 50%;
+}
+.logo h1{
+    font-size: 24px;
+}
+span.logo{
+
+    color: var(--color1);
+    margin: 0;
+    font-size: 24px;
+}
+.fix{
+    padding: 2rem;
+    text-align: right;
+    margin: 10px auto;
+    max-width: 530px;
+
+}
+/*utility class ends*/
+
