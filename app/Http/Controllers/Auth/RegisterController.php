@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -49,10 +49,22 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:100', 'unique:users'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
+         ],
+          ['name.required'=>'لطفا نام کاربری را وارد کنید',
+            'name.max'=>'نام کابری طولانی هست'
+            ,'name.unique'=>'نام کابری تکراریست',
+              'email.required'=>'لطفا پست الکترونیکی را وارد کنید',
+              'email.email'=>'پست الکترونیکی نامعتبر است',
+              'email.unique'=>'پست الکترونیکی وارد شده،قبلا ثبت شده است',
+              'password.required'=>'!!وارد کردن رمزعبور ضروری است',
+              'password.min'=>'رمز عبور حداقل باید 8 کاراکتر باشد',
+              'password.confirmed'=>'تکرار رمز عبور نادرست'
+
+
+           ]);
     }
 
     /**

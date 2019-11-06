@@ -1,0 +1,278 @@
+:root{
+
+    --primary-color:#000312;
+    --secondary-color: #090e22;
+    --even-row: #0f152f;
+    --delete-color: #fdbf0a;
+    --edit-color: #7cb31a;
+    --show-color: #ff5507;
+}
+body{
+
+}
+header{
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 12vh;
+    color: var(--orange);
+}
+header .container{
+    display: flex;
+    justify-content: space-between !important;
+
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+header ul li , header button{
+    padding: 10px;
+    margin-top: 10px;
+    transition: all 0.7s;
+    font-weight: bold;
+    color: var(--color3);
+}
+header li{
+    font-size: 16px;
+
+}
+header button{
+    font-size: 24px;
+    background-color: var(--primary-color);
+    border: none;
+    padding-left: 10px;
+    align-self: left !important;
+    float: left;
+
+}
+header button:hover{
+    color: var(--orange);
+}
+
+
+
+/*main part*/
+section.manager{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+/*menu on the sidebar*/
+aside{
+    background-color: var(--primary-color);
+    min-height: 88vh;
+    color: var(--color3);
+}
+aside ul{
+    justify-content: right;
+    text-align: right;
+    padding: 12px;
+}
+aside ul li{
+    cursor: pointer;
+}
+aside ul li:not(:last-child){
+    border-bottom: 2px solid var(--orange);
+}
+aside ul li a{
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 15px;
+    display: inline-block;
+    color: var(--color3);
+    transition: all 0.7s;
+}
+aside ul li a:hover{
+    padding-right: 30px;
+    color: var(--orange);
+}
+.manager-home{
+
+    background-image: linear-gradient(to bottom right, #b868cb, #6173df);
+    text-align: right;
+    padding: 20px;
+    color: var(--color3);
+    justify-content: center;
+
+}
+
+.manager-home .main{
+    width: 97%;
+    height: 90%;
+    background: var(--primary-color);
+    border-radius: 10px;
+
+
+}
+
+/*admin main page table */
+table.manager{
+    width: 100%;
+    color: var(--color3);
+
+}
+
+
+table.manager th{
+    text-align: right;
+    color: var(--color3);
+    padding: 8px;
+    border-bottom: 1px solid var(--gray);
+}
+table.manager td{
+    padding: 8px 11px;
+    font-size: 12px;
+}
+/*desine delete button*/
+table.manager td.delete button i{
+    color: var(--delete-color);
+    font-size: 18px;
+
+
+}
+table.manager td.delete button{
+    background-color: var(--primary-color);
+    padding: 5px;
+    border: none;
+}
+
+table.manager tr:nth-child(even)  td.delete button{
+
+    background-color: var(--even-row);
+}
+/*delete button ends*/
+table.manager td.show-post a i{
+    color: var(--show-color);
+
+
+}
+table.manager td.edit a i{
+    color: var(--edit-color);
+
+}
+table.manager td a i{
+    text-align: center;
+    font-size: 18px;
+    padding: 4px;
+}
+table.manager tr{
+    border-bottom: 1px solid var(--gray);
+    cursor: pointer;
+}
+table.manager tr td a{
+
+    color: var(--color3);
+}
+table.manager tr:nth-child(even){
+    background-color: var(--even-row);
+}
+
+th.activation{
+    text-align: center !important;
+
+}
+.btn-approve{
+    background-color: var(--edit-color);
+    margin: 5px auto;
+    max-width: 150px;
+}
+
+/*table design ends*/
+
+
+/*image part in edit page*/
+.image-part{
+    float: left;
+    width: 451px;
+    height: 200px;
+    margin: 50px 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.delete-image{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.click-delete{
+    color: #b30913;
+    width: 90px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    border: none;
+}
+.click-delete i{
+    font-size: 24px;
+}
+/*admin form size*/
+
+.fix-admin{
+
+    padding: 2rem;
+    text-align: right;
+    margin: 10px 40px;
+    max-width: 470px;
+    float: right;
+}
+/*show photos page that include 2 parts
+they are in a div that is named photos-part*/
+.photos-part{
+    display: flex;
+    flex-direction: column;
+}
+.photos-part .up-part{
+
+    width: 40%;
+    margin: 20px auto;
+
+}
+.photos-part .up-part select{
+    width: 220px;
+    border-radius: 7px;
+    border: 2px solid var(--color1);
+}
+
+
+.photos-part .down-part{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 85%;
+    margin: 10px auto;
+
+}
+.img-size{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: #cccccc;
+}
+/*ends*/
+.p{
+
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    direction: rtl;
+    color: var(--color3);
+}
+
+/*after deleting a user a message will show you with this style*/
+.success{
+    background: darkgreen;
+    color: white;
+    border-radius: 3px;
+    padding: 2px;
+    width: 180px;
+    display: inline-block;
+    margin-right: 55px;
+    padding-right: 10px;
+}

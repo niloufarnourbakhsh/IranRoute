@@ -30,27 +30,29 @@ nav.nav-2{
 nav.nav-2{
     background-color: var(--color3);
 }
-nav.nav-1 ul,
-nav.nav-2 ul{
+nav.nav-1 > div >ul.menu,
+nav.nav-2 > div > ul.menu{
     display: flex;
     flex-direction: row;
 }
-nav.nav-1 ul li,
-nav.nav-2 ul li{
+nav.nav-1 > div > ul.menu >li,
+nav.nav-2 > div >ul.menu >li{
     padding: 25px 40px;
-    transition: all 0.4s;
     font-size: 16px;
+    position: relative;
+
+    transition: all 0.7s;
 }
-nav.nav-1 ul li:hover,
-nav.nav-2 ul li:hover
+nav.nav-1 > div >ul.menu >li:hover:not(:last-child),
+nav.nav-2 > div >ul.menu >li:hover:not(:last-child)
 {
 
     border-bottom: 5px solid var(--color2);
 }
-nav.nav-1 ul li a{
+nav.nav-1 > div > ul.menu >li> a{
     color: var(--color3);
 }
-nav.nav-2 ul li a{
+nav.nav-2 >div >ul.menu >li >a{
     color: var(--color1);
     font-weight: bold;
 
@@ -60,6 +62,87 @@ nav.nav-2 .logo{
 }
 .nav-color{
     background-color: var(--color3);
+}
+nav.nav-1 >div> ul > li >ul,
+nav.nav-2 >div> ul > li >ul{
+
+    text-align: right;
+    float: right;
+    padding-right: 2px;
+    display: none;
+    position: absolute;
+    width: 180px;
+
+}
+
+nav.nav-1 >div> ul.menu > li:hover >ul,
+nav.nav-2 >div> ul.menu > li:hover >ul {
+    display: block;
+}
+nav.nav-2 >div> ul.menu > li >ul >li,
+nav.nav-1 >div> ul.menu > li >ul >li{
+
+    transition: all 0.7s;
+}
+
+nav.nav-1 >div> ul.menu > li >ul >li:hover >a,
+nav.nav-2 >div> ul.menu > li >ul >li:hover >a{
+    color: var(--color1);
+}
+/*nav1*/
+nav.nav-1 >div> ul.menu > li > a > i
+{
+    padding-right: 0;
+    font-size: 24px;
+    color: var(--color3);
+
+}
+
+nav.nav-1 >div> ul.menu > li >ul>li>a
+{
+    color: var(--color3);
+}
+nav.nav-1 >div> ul.menu > li >ul >li:hover{
+    padding-right: 10px;
+    background-color: var(--color3);
+    border-radius: 2px;
+
+}
+
+/*nav2*/
+nav.nav-2 >div> ul.menu > li > a > i{
+    padding-right: 0;
+    font-size: 24px;
+    color: var(--color1);
+}
+
+nav.nav-2 >div> ul.menu > li >ul{
+    background: var(--color3);
+    border-radius: 2px;
+    border: 2px dashed var(--color1);
+}
+nav.nav-2>div> ul.menu > li >ul>li>a{
+    color: var(--color1);
+}
+nav.nav-2 >div> ul.menu > li >ul >li:hover{
+    padding-right: 10px;
+    border-radius: 2px;
+}
+/*log out button*/
+nav.nav-2  ul.menu button{
+    background-color: var(--color3);
+    font-size: 22px;
+    color: var(--color1);
+    border: none;
+
+}
+nav.nav-1  ul.menu button{
+
+    color: var(--color1);
+    font-size: 22px;
+    border: none;
+    background-color: var(--color3);
+    border-radius: 5px;
 }
 /*heading of the main page ends*/
 
@@ -80,23 +163,23 @@ nav.nav-2 .logo{
     align-items: center;
     text-align: center;
 }
+
 section#gallery{
 
     width: 81%;
     background-color: var(--cover);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    margin: 50px auto;
     border-radius: 30px;
+    height: 470px;
 }
 #gallery  .item{
-    width: 233px;
-    height: 210px;
+    width: 238px;
+    height: 190px;
     background-color: var(--light-gray);
-    margin: 10px 20px;
+    margin: 10px 17px;
     position: relative;
     border-radius: 10px;
+    float: left;
 
 }
 #gallery  .item .title{
@@ -115,11 +198,11 @@ section#gallery{
     overflow: hidden;
 }
 #gallery  .item:hover .title{
-    height: 170px;
+    height: 190px;
 }
 #gallery  .item img{
     width: 100%;
-    height: 170px;
+    height: 155px;
     border-top-left-radius: 10px ;
     border-top-right-radius: 10px ;
 }
@@ -127,8 +210,8 @@ section#gallery{
     margin: 7px auto;
     color: var(--gray);
     font-size: 12px;
-    line-height: 1.1;
-    padding: 1px 5px;
+    line-height: 1.0;
+    padding: 0 5px;
     text-align: center;
 
 }
@@ -147,24 +230,7 @@ section.home .container{
 /*ends*/
 
 
-/*forms of the page like login and register*/
 
-div.form-wrap input,
-div.form-wrap textarea{
-
-    width: 100%;
-    border-radius: 4px;
-    border: 2px solid var(--color2);
-}
-div.form-wrap input:focus{
-    border: 2px solid var(--color1);
-}
-.form-wrap h3{
-    margin: 35px auto 10px;
-    font-size: 18px;
-    text-align: center;
-
-}
 /*this parts is for the image in the left sides of the pages*/
 
 .pagephoto{
@@ -179,6 +245,7 @@ div.form-wrap input:focus{
     border-radius: 50%;
     border: 6px solid white;
     margin-top: 25px;
+
 
 }
 
@@ -208,6 +275,7 @@ footer{
     text-align: center;
     color: var(--color3);
     width: 100%;
+    margin-top: 100px;
 }
 
 /*show posts*/
@@ -219,10 +287,7 @@ section.home .container .right-side{
     position: relative;
 
 }
-section.home .container .left-side{
 
-
-}
 .topic{
     color: var(--color1);
     padding: 10px;
@@ -241,9 +306,52 @@ section.home .container .left-side{
     text-align: right;
 }
 
+
+section.home .post-box{
+    width: 1100px;
+    margin: 10px auto;
+
+}
+section.home .post-box .posts,
+section.home .post-box .images{
+    height: auto;
+    float: right;
+    margin: 2px;
+}
+
+section.home .post-box .posts{
+    width: 65%;
+    padding: 20px;
+
+}
+
+section.home .post-box .images{
+    width: 34%;
+
+}
+
+section.home .post-box .images .post-photo{
+
+    background-color: #1d2124;
+    width: 118px;
+    height: 118px;
+    background-size: cover;
+    margin: 2px;
+    display: inline-block;
+    border-radius: 10px;
+}
+section.home .post-box .images .post-photo:first-child{
+    display: block;
+    width: 240px;
+    height: 240px;
+    margin: 10px 65px;
+}
+
+/*comments*/
+
 .form-wrap h6{
-    border-top: 1px dashed var(--gray-dark);
-    margin: 80px 100px 10px 0;
+
+    margin: 25px 100px 10px 0;
     text-align: right;
     padding-top: 10px;
     width: 80%;
@@ -251,4 +359,79 @@ section.home .container .left-side{
 .form-wrap h6 i{
     font-size: 20px;
     color: var(--orange);
+}
+
+section.leave-comment .container{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+}
+
+section.leave-comment .form-wrap{
+    border-top: 1px dashed var(--gray-dark);
+}
+/*the style of the comments*/
+
+section.comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+
+}
+
+section.comments .comment{
+    width: 34vw;
+    height: auto;
+    padding: 5px;
+    background-color: var(--color4);
+    margin: 3px 230px 25px;
+    border-radius: 5px;
+    display: block;
+
+}
+section.comments .comment div{
+    position: relative;
+    align-items: left;
+    direction: ltr;
+}
+
+section.comments div button{
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    font-size: 20px;
+    color: #b30913;
+    background-color: var(--color4);
+    border: none;
+}
+
+
+section.comments .comment h5{
+
+    font-size: 14px;
+    font-weight: bold;
+}
+section.comments .comment p{
+    font-size: 12px;
+}
+
+div.head-comment{
+    border-top: 2px solid var(--color1);
+    width: 34vw;
+    margin: 0 230px 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+div.head-comment p{
+    background-color: var(--color1);
+    padding: 7px 4px;
+    text-align: center;
+    color: var(--color3);
+
+}
+.gray{
+    border: 1px solid var(--color4) !important;
+
 }

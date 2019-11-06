@@ -18,8 +18,11 @@ class CreatePostsTable extends Migration
             $table->integer('user_id');
             $table->string('title');
             $table->text('body');
-            $table->text('food');
-            $table->text('sightseeing');
+            $table->string('slug');
+            $table->text('food')->nullable();
+            $table->text('sightseeing')->nullable();
+            $table->integer('city_id');
+            $table->integer('is_active')->default(0);
             $table->timestamps();
         });
     }
