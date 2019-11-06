@@ -5,6 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="519bad73-8b3f-41c3-9dcd-3cb8c49eacbc" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/CommentRequest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/EditPostRequest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/postCreateRequest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/sluggable.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2019_10_19_135657_create_roles_table.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2019_10_24_200828_create_comments_table.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/license.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/codesample/css/prism.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-cool.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-cry.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-embarassed.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-frown.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-innocent.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-kiss.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-laughing.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-sealed.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-surprised.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-undecided.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-wink.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/emoticons/img/smiley-yell.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/help/img/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/plugins/visualblocks/css/visualblocks.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/content.inline.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/content.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/content.mobile.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/fonts/tinymce-mobile.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/fonts/tinymce-small.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/fonts/tinymce-small.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/fonts/tinymce-small.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/fonts/tinymce-small.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/fonts/tinymce.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/fonts/tinymce.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/fonts/tinymce.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/fonts/tinymce.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/img/anchor.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/img/loader.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/img/object.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/img/trans.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/skin.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/skin.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/skin.mobile.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/skins/lightgray/skin.mobile.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tinymce/tinymce.min.js" />
       <change beforePath="$PROJECT_DIR$/.idea/IranRoute.iml" afterPath="$PROJECT_DIR$/.idea/IranRoute.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -246,20 +294,7 @@
             <path>
               <item name="IranRoute" type="b2602c69:ProjectViewProjectNode" />
               <item name="IranRoute" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="IranRoute" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IranRoute" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="IranRoute" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IranRoute" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -356,12 +391,12 @@
       <workItem from="1572873731913" duration="653000" />
       <workItem from="1572898888270" duration="1185000" />
       <workItem from="1572983894789" duration="1823000" />
-      <workItem from="1573061253118" duration="950000" />
+      <workItem from="1573061253118" duration="1300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169112000" />
+    <option name="totallyTimeSpent" value="169462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
